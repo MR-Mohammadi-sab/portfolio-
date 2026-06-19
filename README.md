@@ -13,7 +13,6 @@ This project showcases my skills, projects,  as **Frontend Developer & Computer 
 
 ## 📸 Preview
 ![image](./public/demo.png)
-
 ---
 
 ## ✨ Features

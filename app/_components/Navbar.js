@@ -52,13 +52,13 @@ export default function Navbar() {
         <div className="flex items-center  justify-between relative">
           
           {/* Logo */}
-          <div className="flex items-center gap-4">
+          <Link href="/about" className="flex items-center gap-4">
             <div className="w-14 h-14 relative">
                 <Image src={my} alt="my picture" className="w-14 h-14 rounded-4xl  object-contain object-top" fill/>
             </div>
             <span className="font-bold lg:text-xl   dark:text-gray-100 text-sm text-gray-800">
               Mr.MOHAMMADI</span>
-          </div>
+          </Link>
           
           {/* Desktop Menu */}
           <ul className="hidden sm:flex items-center gap-8 mt-4">

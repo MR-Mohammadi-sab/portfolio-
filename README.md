@@ -1,4 +1,4 @@
-````md
+
 # 🌐 Personal Portfolio
 
 A modern personal portfolio website built with **Next.js**,and **Tailwind CSS**.  
@@ -7,12 +7,12 @@ This project showcases my skills, projects,  as **Frontend Developer & Computer 
 ---
 
 ## 🚀 Live Demo
-👉 [Live Demo](https://portfolio-wbqz.vercel.app)
+👉 [https://portfolio-wbqz.vercel.app](https://portfolio-wbqz.vercel.app)
 
 ---
 
 ## 📸 Preview
-![Preview](https://raw.githubusercontent.com/MR-Mohammadi-sab/portfolio/main/public/demo.png)
+![Preview](./public/demo.png)
 ---
 
 ## ✨ Features

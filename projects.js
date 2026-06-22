@@ -33,7 +33,7 @@ export const datas=[
         image:'/university.png',
         desc:"A modern and fully responsive University Profile Website developed with a clean and user-friendly interface. Responsive Design, and Form Validation for better user experience.",
         tech: ["HTML", "CSS","JAVASCRIPT" ],
-        demoUrl: "https://the-wild-oasis-ten-kappa.vercel.app/",
+        demoUrl: "https://university-profile.netlify.app/",
         githubUrl: "https://github.com/MR-Mohammadi-sab/the-wild-oasis"
     },
     {

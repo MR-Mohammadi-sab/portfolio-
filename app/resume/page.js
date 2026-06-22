@@ -1,5 +1,7 @@
 import { LuDownload } from "react-icons/lu";
-export const metadata ="Resume"
+export const metadata ={
+  title:"Resume"
+}
 export default function Resume() {
   return (
     <section className="pt-32 pb-20  min-h-screen">

@@ -1,6 +1,8 @@
 import ProjectCart from "../_components/ProjectCart";
 
-export const metadata ="Project"
+export const metadata ={
+  title:"Project"
+}
 export default function page( ) {
   return (
     <>

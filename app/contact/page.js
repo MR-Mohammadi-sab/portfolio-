@@ -8,7 +8,9 @@ import { FiPhone } from "react-icons/fi";
 import { sendEmail } from "../_lib/actions";
 
 import Button from "../_components/FromButton";
-export const metadata ="Contact"
+export const metadata ={
+  title:"Contact"
+}
 export default function page() {
   return (
     <section className="min-h-screen md:py-20 py-10 ">

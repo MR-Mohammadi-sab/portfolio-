@@ -24,7 +24,9 @@ const familiarTech = [
   "C++",
 ];
 
-export const metadata ="About"
+export const metadata ={
+  title:"About"
+}
 
 export default function Page() {
   return (

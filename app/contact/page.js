@@ -109,7 +109,7 @@ export default function page() {
                 <input
                   type="text"
                   placeholder="John Doe"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-700 dark:bg-gray-800 bg-white outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full focus:shadow-md focus:shadow-blue-600 px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-700 dark:bg-gray-800 bg-white outline-none focus:ring-1 focus:ring-blue-500"
                   name="name"
                 />
               </div>
@@ -122,7 +122,7 @@ export default function page() {
                 <input
                   type="email"
                   placeholder="john@example.com"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-700 dark:bg-gray-800 outline-none focus:ring-2 focus:ring-blue-500 bg-white"
+                  className="w-full focus:shadow-md focus:shadow-blue-600 px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-700 dark:bg-gray-800 outline-none focus:ring-2 focus:ring-blue-500 bg-white"
                   name="email"
                 />
               </div>
@@ -135,7 +135,7 @@ export default function page() {
                 <textarea
                   rows={6}
                   placeholder="Tell me about your project..."
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-700 dark:bg-gray-800 outline-none focus:ring-2 focus:ring-blue-500 resize-none bg-white"
+                  className=" focus:shadow-md focus:shadow-blue-600 w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-700 dark:bg-gray-800 outline-none focus:ring-2 focus:ring-blue-500 resize-none bg-white"
                   name="message"
                 />
               </div>

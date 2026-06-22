@@ -4,6 +4,9 @@ import { FaBars } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
+
+import my from "@/public/my.png";
 
 
 const navElements=[
@@ -46,14 +49,15 @@ export default function Navbar() {
   return (
     <nav className="max-w-6xl mx-auto px-4 py-2 ">
       
-        <div className="flex items-start  justify-between relative">
+        <div className="flex items-center  justify-between relative">
           
           {/* Logo */}
           <div className="flex items-center gap-4">
-            <div >
-                {/* <img src="/my.jpg" alt="my picture" className="w-24 h-24 rounded-4xl md:w-32 md:h-32 object-cover" /> */}
+            <div className="w-14 h-14 relative">
+                <Image src={my} alt="my picture" className="w-14 h-14 rounded-4xl  object-contain object-top" fill/>
             </div>
-            <span className="font-bold lg:text-xl select-none dark:text-gray-100 text-sm text-gray-800">Mohammad Asif <br /> Mohammadi</span>
+            <span className="font-bold lg:text-xl   dark:text-gray-100 text-sm text-gray-800">
+              Mr.MOHAMMADI</span>
           </div>
           
           {/* Desktop Menu */}

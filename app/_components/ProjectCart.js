@@ -2,7 +2,6 @@ import Image from "next/image";
 import { datas } from "../../projects";
 
 export default function ProjectCart() {
-  console.log(datas.map(p=>p.tech));
   
   return (
     <section className="px-6 md:px-12 py-12">
@@ -22,7 +21,7 @@ export default function ProjectCart() {
           <div
             key={project.id}
             className="
-              group relative overflow-hidden rounded-2xl
+              group  overflow-hidden rounded-2xl
               border border-border-light
               dark:border-border-dark
               bg-surface-light
@@ -39,6 +38,7 @@ export default function ProjectCart() {
                 alt={project.title}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110 object-top"
+                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition" />
             </div>
@@ -81,7 +81,7 @@ export default function ProjectCart() {
                     flex-1 text-center py-2 rounded-lg
                     bg-primary
                     hover:bg-primary-hover
-                    dark:text-white text-sm font-medium
+                    text-white text-sm font-medium
                     transition
                   
                   "

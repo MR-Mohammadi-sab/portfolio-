@@ -8,7 +8,7 @@ export default function ProjectCart() {
       {/* Title */}
       <div className="text-center mb-10">
         <h2 className="text-3xl font-bold text-text-light dark:text-text-dark">
-          My Projects
+          My Projects {datas?.length}
         </h2>
         <p className="text-sm mt-2 text-text-secondary-light dark:text-text-secondary-dark">
           A collection of things I’ve built while learning and practicing frontend development

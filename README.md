@@ -7,7 +7,7 @@ This project showcases my skills, projects,  as **Frontend Developer & Computer 
 ---
 
 ## 🚀 Live Demo
-👉 (https://portfolio-wbqz.vercel.app)
+👉 [Live Demo](https://portfolio-wbqz.vercel.app)
 
 ---
 

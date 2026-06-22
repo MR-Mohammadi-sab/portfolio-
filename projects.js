@@ -19,6 +19,15 @@ export const datas=[
         githubUrl: "https://github.com/MR-Mohammadi-sab/the-wild-oasis"
     },
     {
+        id: 44,
+        title:"The Wild Oasis – Management System",
+        image:'/dashboard.png',
+        desc:"A modern and responsive **hotel/room management dashboard** built with React and Tailwind CSS. This system helps manage Rooms, bookings, guests, and analytics in a clean and efficient interface.",
+        tech: ["React.js", "Tailwind CSS" ],
+        demoUrl: "https://kaleidoscopic-hotteok-2be779.netlify.app/",
+        githubUrl: "https://github.com/MR-Mohammadi-sab/the-wild-oasis-Management-system"
+    },
+    {
         id: 1,
         title:"Social Media App",
         image:'/lamasocial02.netlify.app_.png',
@@ -34,7 +43,7 @@ export const datas=[
         desc:"A modern and fully responsive University Profile Website developed with a clean and user-friendly interface. Responsive Design, and Form Validation for better user experience.",
         tech: ["HTML", "CSS","JAVASCRIPT" ],
         demoUrl: "https://university-profile.netlify.app/",
-        githubUrl: "https://github.com/MR-Mohammadi-sab/the-wild-oasis"
+        githubUrl: "https://github.com/MR-Mohammadi-sab/university-Profile"
     },
     {
         id: 5,

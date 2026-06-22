@@ -22,7 +22,7 @@ export const datas=[
         id: 44,
         title:"The Wild Oasis – Management System",
         image:'/dashboard.png',
-        desc:"A modern and responsive **hotel/room management dashboard** built with React and Tailwind CSS. This system helps manage Rooms, bookings, guests, and analytics in a clean and efficient interface.",
+        desc:"A modern and responsive *hotel management dashboard* built with React and Tailwind CSS. This system helps manage Rooms, bookings, guests, and analytics in a clean and efficient interface.",
         tech: ["React.js", "Tailwind CSS" ],
         demoUrl: "https://kaleidoscopic-hotteok-2be779.netlify.app/",
         githubUrl: "https://github.com/MR-Mohammadi-sab/the-wild-oasis-Management-system"

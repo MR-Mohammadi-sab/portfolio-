@@ -12,7 +12,7 @@ This project showcases my skills, projects,  as **Frontend Developer & Computer 
 ---
 
 ## 📸 Preview
-![Preview](./public/demo.png)
+![Preview](https://raw.githubusercontent.com/MR-Mohammadi-sab/portfolio/main/public/demo.png)
 ---
 
 ## ✨ Features

@@ -16,7 +16,7 @@ export default function ProjectCart() {
       </div>
 
       {/* GRID */}
-      <div className="grid gap-6 grid-cols-1 md:grid-cols-3">
+      <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {datas.map((project) => (
           <div
             key={project.id}

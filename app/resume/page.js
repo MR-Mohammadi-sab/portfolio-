@@ -20,7 +20,7 @@ export default function Resume() {
         {/* Download Button */}
         <div className="flex justify-center mb-16">
           <a
-            href="/Mohammad-Asef-Mohammadi-Front-End-Developer-CV.pdf"   
+            href="/Mr.Mohammadi CV.pdf"   
             download
             className="flex items-center gap-2 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
           >

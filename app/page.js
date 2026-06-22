@@ -5,7 +5,7 @@ import illu from "@/public/I.png";
 export default function Page() {
   return (
     <section className="flex flex-col items-center justify-center md:py-8 py-4">
-            <div className="mt-5 inline-block px-4 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 mb-6 text-sm font-medium">
+            <div className="mt-5 text-center inline-block px-4 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 mb-6 text-sm font-medium">
           👨‍💻 Computer Science Student • Frontend Developer
         </div>
 

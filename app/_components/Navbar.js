@@ -44,7 +44,11 @@ export default function Navbar() {
       },[theme])
 
 
-  
+      useEffect(()=>{
+        
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        setOpen(false)
+      },[pathname])
 
   return (
     <nav className="max-w-6xl mx-auto px-4 py-2 ">
@@ -88,7 +92,7 @@ export default function Navbar() {
           
           {/* Mobile Menu Button */}
           <button className="sm:hidden dark:text-gray-100 cursor-pointer absolute right-2 top-2" onClick={()=>setOpen(true)}>
-            {!open&&<FaBars />}
+            {!open&&<FaBars size={24} />}
           </button>
 
         <div   className={`
@@ -101,7 +105,7 @@ export default function Navbar() {
     ${open ? "translate-x-0" : "translate-x-full"}
   `}>
               <button className="sm:hidden dark:text-gray-100 cursor-pointer absolute right-2 top-2" onClick={()=>setOpen(false)}>
-            {open&&<RxCross2 />}
+            {open&&<RxCross2 size={22} />}
           </button>
             {navElements.map((item) => (
               <Link 

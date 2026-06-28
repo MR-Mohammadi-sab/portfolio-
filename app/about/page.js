@@ -15,7 +15,7 @@ const tech = [
 ];
 
 const familiarTech = [
-  "TypeScript"
+  "TypeScript",
   "Data Structures",
   "Algorithms",
   "Java",

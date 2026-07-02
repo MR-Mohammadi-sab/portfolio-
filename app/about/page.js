@@ -28,7 +28,6 @@ const familiarTech = [
 export const metadata = {
   title: "About",
 };
-
 export default function Page() {
   return (
     <section className="min-h-screen md:py-20 py-10 flex flex-col md:flex-row gap-12 md:items-start items-center justify-center max-w-6xl mx-auto">
@@ -41,7 +40,7 @@ export default function Page() {
               alt="Mohammad Asif"
               className="w-full h-full object-cover"
               placeholder="blur"
-              priority
+              quality={[100, 75]}
             />
           </div>
         </div>

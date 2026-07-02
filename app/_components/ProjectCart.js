@@ -2,16 +2,16 @@ import Image from "next/image";
 import { datas } from "../../projects";
 
 export default function ProjectCart() {
-  
   return (
     <section className="px-6 md:px-12 py-12">
       {/* Title */}
       <div className="text-center mb-10">
-      <h2 className="text-3xl font-bold text-text-light dark:text-text-dark">
-        Featured Projects ({datas?.length})
-      </h2>
+        <h2 className="text-3xl font-bold text-text-light dark:text-text-dark">
+          Featured Projects ({datas?.length})
+        </h2>
         <p className="text-sm mt-2 text-text-secondary-light dark:text-text-secondary-dark">
-          A collection of things I’ve built while learning and practicing frontend development
+          A collection of things I’ve built while learning and practicing
+          frontend development
         </p>
       </div>
 
@@ -38,7 +38,7 @@ export default function ProjectCart() {
                 alt={project.title}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110 object-top"
-                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition" />
             </div>

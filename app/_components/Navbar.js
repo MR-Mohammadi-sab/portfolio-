@@ -156,7 +156,8 @@ before:bg-black/20
     shadow-xl
     transform transition-transform duration-300
     z-50
-    flex flex-col gap-6 p-6
+    flex flex-col gap-6 p-6 
+    items-center 
     ${open ? "translate-x-0" : "translate-x-full"}
   `}
         >
@@ -182,7 +183,7 @@ before:bg-black/20
             <button
               onClick={() => setTheme("light")}
               className="
-relative w-10 h-10 flex items-center justify-center rounded-lg
+relative w-10 h-10 mx-auto flex items-center justify-center rounded-lg
 
 
 shadow-[0_6px_18px_rgba(250,204,21,0.35)]
@@ -204,7 +205,7 @@ after:blur-[1px]
             <button
               onClick={() => setTheme("dark")}
               className="
-relative w-10 h-10 flex items-center justify-center rounded-lg
+relative w-10 h-10 flex mx-auto items-center justify-center rounded-lg
 
 
 

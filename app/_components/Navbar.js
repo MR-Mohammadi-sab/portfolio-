@@ -177,12 +177,62 @@ before:bg-black/20
           ))}
 
           {/* Theme Toggle */}
-          <button
-            onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-            className="text-2xl p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 flex items-center justify-center"
-          >
-            {theme === "light" ? "🌙" : "☀️"}
-          </button>
+
+          {theme === "dark" ? (
+            <button
+              onClick={() => setTheme("light")}
+              className="
+relative w-10 h-10 flex items-center justify-center rounded-lg
+
+
+shadow-[0_6px_18px_rgba(250,204,21,0.35)]
+
+after:content-['']
+after:absolute
+after:top-2
+after:right-2
+after:w-3
+after:h-3
+after:rounded-full
+after:bg-white/70
+after:blur-[1px]
+"
+            >
+              ☀️
+            </button>
+          ) : (
+            <button
+              onClick={() => setTheme("dark")}
+              className="
+relative w-10 h-10 flex items-center justify-center rounded-lg
+
+
+
+shadow-[0_6px_18px_rgba(148,163,184,0.25)]
+
+after:content-['']
+after:absolute
+after:top-2
+after:left-2
+after:w-3
+after:h-3
+after:rounded-full
+after:bg-white/30
+after:blur-[1px]
+
+before:content-['']
+before:absolute
+before:bottom-2
+before:right-2
+before:w-2
+before:h-2
+before:rounded-full
+before:bg-black/20
+"
+            >
+              🌙
+            </button>
+          )}
         </div>
       </div>
     </nav>

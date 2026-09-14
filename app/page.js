@@ -43,13 +43,6 @@ export default function Page() {
             >
               Contact Me
             </Link>
-
-            <Link
-              href="/resume"
-              className="px-8 py-3 border-2 border-gray-300 dark:border-gray-700 rounded-lg hover:border-blue-500 hover:text-blue-500 transition hover:scale-105 dark:text-gray-100"
-            >
-              Download Resume
-            </Link>
           </div>
         </div>
 

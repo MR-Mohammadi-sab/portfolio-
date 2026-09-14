@@ -25,8 +25,8 @@ export default function Page() {
             JavaScript, Node.js, and modern databases — backed by a Computer
             Science foundation in data structures, algorithms, and software
             architecture. Currently a Computer Science student, actively
-            building real-world projects while seeking internship and junior
-            developer opportunities.
+            building real-world projects while seeking internship and developer
+            opportunities.
           </p>
 
           <div className="flex flex-wrap gap-4">

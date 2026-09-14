@@ -1,18 +1,14 @@
 import Link from "next/link";
 
-export const metadata = {
-  title: "Page Not Found",
-};
-
 function NotFound() {
   return (
-    <main className='min-h-[60vh] flex flex-col items-center justify-center text-center space-y-6'>
+    <main className='text-center space-y-6 mt-4'>
       <h1 className='text-3xl font-semibold dark:text-white'>
         This page could not be found :(
       </h1>
       <Link
         href='/'
-        className='inline-block bg-primary hover:bg-primary-hover text-white rounded-lg px-6 py-3 text-lg transition'
+        className='inline-block bg-primary text-blue-100 px-6 py-3 text-lg'
       >
         Go back home
       </Link>

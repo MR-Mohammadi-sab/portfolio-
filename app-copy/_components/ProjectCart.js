@@ -11,7 +11,7 @@ export default function ProjectCart() {
         </h2>
         <p className="text-sm mt-2 text-text-secondary-light dark:text-text-secondary-dark">
           A collection of things I’ve built while learning and practicing
-          full-stack web development
+          frontend development
         </p>
       </div>
 
@@ -77,8 +77,6 @@ export default function ProjectCart() {
                 <a
                   href={project.demoUrl}
                   target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`View live demo of ${project.title}`}
                   className="
                     flex-1 text-center py-2 rounded-lg
                     bg-primary
@@ -94,8 +92,6 @@ export default function ProjectCart() {
                 <a
                   href={project.githubUrl}
                   target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`View source code of ${project.title} on GitHub`}
                   className="
                     flex-1 text-center py-2 rounded-lg
                     border text-sm font-medium

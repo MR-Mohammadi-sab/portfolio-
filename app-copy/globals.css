@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Light Mode */
+  --color-bg-light: #f8fafc;
+  --color-surface-light: #ffffff;
+  --color-text-light: #0f172a;
+  --color-text-secondary-light: #64748b;
+  --color-border-light: #e2e8f0;
+
+  /* Brand Colors */
+  --color-primary: #3b82f6;
+  --color-primary-hover: #2563eb;
+  --color-secondary: #7c3aed;
+  --color-secondary-hover: #6d28d9;
+
+  /* Dark Mode */
+  --color-bg-dark: #0b1120;
+  --color-surface-dark: #111827;
+  --color-text-dark: #f8fafc;
+  --color-text-secondary-dark: #94a3b8;
+  --color-border-dark: #334155;
+
+  /* Brand Colors (slightly brighter for dark mode) */
+  --color-primary-dark: #60a5fa;
+  --color-primary-dark-hover: #3b82f6;
+  --color-secondary-dark: #a78bfa;
+  --color-secondary-dark-hover: #8b5cf6;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  position: relative;
+}
+
+/* ================= SUN ================= */
+.sun {
+  background: radial-gradient(circle at 30% 30%, #fff7b0, #facc15, #f59e0b);
+}
+
+/* FRONT LIGHT (IMPORTANT PART) */
+.sun::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.2),
+    transparent 70%
+  );
+  top: 10px;
+  right: 10px;
+  filter: blur(1px);
+}
+
+/* ================= MOON ================= */
+.moon {
+  background: radial-gradient(circle at 30% 30%, #e2e8f0, #94a3b8, #475569);
+}
+
+/* FRONT LIGHT FOR MOON */
+.moon::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.15),
+    transparent 70%
+  );
+  top: 12px;
+  right: 12px;
+  filter: blur(1px);
+}
+
+/* ICON */
+.icon span {
+  position: relative;
+  z-index: 2;
+}

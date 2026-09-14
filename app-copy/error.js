@@ -9,10 +9,10 @@ export default function Error({ error, reset }) {
         <p className="text-lg dark:text-gray-200">{error.message}</p>
 
         <button
-          className="inline-block text-blue-100 bg-primary hover:bg-primary-hover cursor-pointer px-6 py-3 text-lg rounded-lg"
+          className="inline-block text-blue-100 bg-primary hover:bg-primary-hover cursor-pointer px-6 py-3 text-lg"
           onClick={reset}
         >
-          Try again
+          Try againg
         </button>
       </div>
     </div>

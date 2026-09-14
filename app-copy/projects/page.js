@@ -1,9 +1,7 @@
 import ProjectCart from "../_components/ProjectCart";
 
 export const metadata = {
-  title: "Projects",
-  description:
-    "A selection of full-stack and frontend web projects built by Mohammad Asif with React, Next.js, and Tailwind CSS.",
+  title: "Project",
 };
 export default function page() {
   return (

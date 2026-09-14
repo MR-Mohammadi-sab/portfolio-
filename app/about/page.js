@@ -1,46 +1,28 @@
 import Image from "next/image";
 import my from "@/public/my.png";
-
-const tech = [
-  "React.js",
-  "Next.js",
-  "Rest API",
-  "JavaScript",
-  "HTML",
-  "CSS",
-  "Tailwind CSS",
-  "MySQL",
-  "PostgreSQL",
-  "Oracle",
-];
-
-const familiarTech = [
-  "TypeScript",
-  "Data Structures",
-  "Algorithms",
-  "Java",
-  "JavaFX",
-  "Python",
-  "C",
-  "C++",
-];
+import Skills from "../_components/Skills";
 
 export const metadata = {
   title: "About",
+  description:
+    "Software Engineer with a full-stack web development specialization in React, Next.js, TypeScript, and Node.js.",
 };
+
 export default function Page() {
   return (
     <section className="min-h-screen md:py-20 py-10 flex flex-col md:flex-row gap-12 md:items-start items-center justify-center max-w-6xl mx-auto">
       {/* Image */}
-      <div className="relative flex justify-center">
+      <div className="relative flex justify-center shrink-0">
         <div className="sm:w-80 sm:h-80 w-64 h-64 rounded-2xl bg-linear-to-r from-blue-500 to-purple-500 p-1">
-          <div className="w-full h-full bg-white dark:bg-gray-900 rounded-2xl overflow-hidden">
+          <div className="w-full h-full bg-white dark:bg-gray-900 rounded-2xl overflow-hidden relative">
             <Image
               src={my}
-              alt="Mohammad Asif"
-              className="w-full h-full object-cover"
+              alt="Portrait of Mohammad Asif"
+              fill
+              className="object-cover"
               placeholder="blur"
-              quality={[100, 75]}
+              quality={90}
+              sizes="(max-width: 640px) 256px, 320px"
             />
           </div>
         </div>
@@ -62,65 +44,34 @@ export default function Page() {
         </h1>
 
         <p className="text-xl text-gray-600 dark:text-gray-300 mb-6">
-          Computer Science Student (7th Semester) and Frontend Developer
-          passionate about building modern, responsive, and user-friendly web
-          applications.
+          Software Engineer | Full-Stack Web Developer, currently in my 7th
+          semester of Computer Science.
         </p>
 
         <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
           <p>
-            Since my first days at university, I discovered a strong passion for
-            programming and building digital products.
+            My Computer Science studies gave me a software engineering
+            foundation — data structures, algorithms, software architecture,
+            API and database design — that I apply in practice through
+            modern full-stack web development.
           </p>
 
           <p>
-            I focus on creating real-world web applications using React and
-            Next.js, with an emphasis on clean design, responsiveness, and user
-            experience.
+            My strongest practical specialization is building full-stack
+            applications with React and Next.js on the frontend, and
+            Node.js, REST APIs, and relational or document databases on the
+            backend, with a focus on clean architecture, responsiveness, and
+            user experience.
           </p>
 
           <p>
             I continuously improve my skills through hands-on projects and
             learning modern web technologies, and I enjoy turning ideas into
-            functional and scalable applications.
+            functional, scalable applications.
           </p>
         </div>
 
-        {/* Main Skills */}
-        <div className="mt-8">
-          <h2 className="text-xl font-semibold mb-4 dark:text-white">
-            Technologies I Use
-          </h2>
-
-          <ul className="flex flex-wrap gap-3">
-            {tech.map((skill) => (
-              <li
-                key={skill}
-                className="px-4 py-2 bg-gray-200 dark:bg-gray-800 rounded-full text-sm font-medium dark:text-gray-100"
-              >
-                {skill}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Familiar Technologies */}
-        <div className="mt-8">
-          <h2 className="text-xl font-semibold text-blue-500 mb-4">
-            Familiar With
-          </h2>
-
-          <ul className="flex flex-wrap gap-3">
-            {familiarTech.map((skill) => (
-              <li
-                key={skill}
-                className="px-4 py-2 bg-gray-200 dark:bg-gray-800 rounded-full text-sm font-medium dark:text-gray-100"
-              >
-                {skill}
-              </li>
-            ))}
-          </ul>
-        </div>
+        <Skills />
       </div>
     </section>
   );

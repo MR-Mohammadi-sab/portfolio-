@@ -1,32 +1,31 @@
-import { LuDownload } from "react-icons/lu";
+import CVViewer from "../_components/Cv";
+
 export const metadata = {
   title: "Resume",
+  description:
+    "Resume of Mohammad Asif, Software Engineer | Full-Stack Web Developer.",
 };
-export default function Resume() {
-  return (
-    <section className="pt-32 pb-20  min-h-screen">
-      <div className="max-w-6xl mx-auto px-6">
-        {/* Page Title */}
-        <div className="mb-16 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 dark:text-gray-100">
-            My <span className="text-blue-500">Resume</span>
-          </h1>
-          <p className="text-gray-600 dark:text-gray-400">
-            Frontend Developer | React
-          </p>
-        </div>
 
-        {/* Download Button */}
-        <div className="flex justify-center mb-16">
-          <a
-            href="/Mr.Mohammadi CV.pdf"
-            download
-            className="flex items-center gap-2 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
-          >
-            <LuDownload size={18} />
-            Download CV
-          </a>
-        </div>
+export default function CVPage() {
+  return (
+    <section className="min-h-screen bg-gray-100 dark:bg-inherit flex flex-col items-center py-10 px-4">
+      {/* HEADER */}
+      <div className="w-full max-w-4xl flex justify-between items-center mb-6">
+        <h1 className="text-lg font-semibold">My CV</h1>
+
+        <a
+          href="/cv.pdf"
+          download
+          aria-label="Download Mohammad Asif's CV as a PDF"
+          className="px-4 py-2 bg-blue-500 hover:bg-blue-600 transition text-white rounded-lg"
+        >
+          Download CV
+        </a>
+      </div>
+
+      {/* PDF VIEWER */}
+      <div className="w-full max-w-4xl bg-white dark:bg-gray-900 shadow-2xl p-4 rounded-xl">
+        <CVViewer />
       </div>
     </section>
   );

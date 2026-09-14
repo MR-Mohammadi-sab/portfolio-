@@ -6,9 +6,7 @@ export default function Button(){
     const {pending}=useFormStatus()
     return   <button
                 type="submit"
-                disabled={pending}
-                aria-busy={pending}
-                className="cursor-pointer disabled:cursor-not-allowed disabled:opacity-70 w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-medium transition-all"
+                className="cursor-pointer w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-medium transition-all"
               >
                 {!pending?"Send Message":"Sending..."}
               </button>

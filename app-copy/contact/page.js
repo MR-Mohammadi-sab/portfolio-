@@ -1,13 +1,16 @@
-import { FaLinkedinIn, FaGithub } from "react-icons/fa6";
+
+import {
+  FaLinkedinIn,
+  FaGithub,
+} from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
 import { FiPhone } from "react-icons/fi";
+import { sendEmail } from "../_lib/actions";
 
-import ContactForm from "../_components/ContactForm";
-export const metadata = {
-  title: "Contact",
-  description:
-    "Get in touch with Mohammad Asif, a Software Engineer specializing in full-stack web development.",
-};
+import Button from "../_components/FromButton";
+export const metadata ={
+  title:"Contact"
+}
 export default function page() {
   return (
     <section className="min-h-screen md:py-20 py-10 ">
@@ -23,9 +26,9 @@ export default function page() {
           </h1>
 
           <p className="mt-4 text-slate-600 dark:text-slate-400 leading-relaxed">
-            Whether you have an internship opportunity, a freelance project, or
-            simply want to connect, feel free to reach out. I am always open to
-            learning, collaboration, and new challenges.
+            Whether you have an internship opportunity, a freelance project,
+            or simply want to connect, feel free to reach out. I am always
+            open to learning, collaboration, and new challenges.
           </p>
         </div>
 
@@ -62,6 +65,7 @@ export default function page() {
                   </p>
                 </div>
               </div>
+              
             </div>
 
             {/* Social Links */}
@@ -75,7 +79,7 @@ export default function page() {
                   href="https://linkedin.com/in/mohammad-asef-mohammadi-1b80a632b"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 rounded-xl  dark:bg-gray-700 dark:border-gray-800 bg-gray-200 hover:-translate-y-1 transition-all"
+                  className="p-4 rounded-xl  bg-gray-200 border border-gray-200 dark:border-gray-800 hover:-translate-y-1 transition-all"
                 >
                   <FaLinkedinIn size={22} />
                 </a>
@@ -84,7 +88,7 @@ export default function page() {
                   href="https://github.com/mr-mohammadi-sab"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 rounded-xl  dark:bg-gray-700 dark:border-gray-800 bg-gray-200 hover:-translate-y-1 transition-all"
+                  className="p-4 rounded-xl  bg-gray-200 border border-gray-200 dark:border-gray-800 hover:-translate-y-1 transition-all"
                 >
                   <FaGithub size={22} />
                 </a>
@@ -98,10 +102,51 @@ export default function page() {
               Send a Message
             </h2>
 
-            <ContactForm />
+            <form action={sendEmail} className="space-y-5 dark:text-white w-full">
+              <div>
+                <label className="block mb-2 text-sm font-medium dark:text-white">
+                  Full Name
+                </label>
+
+                <input
+                  type="text"
+                  placeholder="Ali Ahmadi"
+                  className="w-full focus:shadow-md focus:shadow-blue-600 px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-700 dark:bg-gray-800 bg-white outline-none focus:ring-1 focus:ring-blue-500"
+                  name="name"
+                />
+              </div>
+
+              <div>
+                <label className="block mb-2 text-sm font-medium dark:text-white">
+                  Email Address
+                </label>
+
+                <input
+                  type="email"
+                  placeholder="ali@example.com"
+                  className="w-full focus:shadow-md focus:shadow-blue-600 px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-700 dark:bg-gray-800 outline-none focus:ring-2 focus:ring-blue-500 bg-white"
+                  name="email"
+                />
+              </div>
+
+              <div>
+                <label className="block mb-2 text-sm font-medium dark:text-white">
+                  Message
+                </label>
+
+                <textarea
+                  rows={6}
+                  placeholder="Tell me about your project..."
+                  className=" focus:shadow-md focus:shadow-blue-600 w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-700 dark:bg-gray-800 outline-none focus:ring-2 focus:ring-blue-500 resize-none bg-white"
+                  name="message"
+                />
+              </div>
+                <Button />
+            </form>
           </div>
         </div>
       </div>
     </section>
   );
 }
+

@@ -15,9 +15,9 @@ export default function Footer() {
             </h2>
 
             <p className="mt-3 text-gray-400 leading-relaxed">
-              Software Engineer | Full-Stack Web Developer focused on
-              building modern, scalable web applications with React,
-              Next.js, TypeScript, and Node.js.
+              Frontend Developer focused on building modern,
+              responsive, and user-friendly web applications
+              with React and Next.js.
             </p>
           </div>
 
@@ -53,28 +53,25 @@ export default function Footer() {
                 href="https://linkedin.com/in/mohammad-asef-mohammadi-1b80a632b"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Mohammad Asif on LinkedIn"
                 className="p-3 rounded-lg bg-gray-900 hover:bg-blue-600 transition-all duration-300"
               >
-                <FaLinkedinIn size={20} aria-hidden="true" />
+                <FaLinkedinIn size={20} />
               </a>
 
               <a
                 href="https://github.com/mr-mohammadi-sab"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Mohammad Asif on GitHub"
                 className="p-3 rounded-lg bg-gray-900 hover:bg-gray-700 transition-all duration-300"
               >
-                <BsGithub size={20} aria-hidden="true" />
+                <BsGithub size={20} />
               </a>
 
               <a
                 href="mailto:asf423796@gmail.com"
-                aria-label="Email Mohammad Asif"
                 className="p-3 rounded-lg bg-gray-900 hover:bg-red-600 transition-all duration-300"
               >
-                <CiMail size={20} aria-hidden="true" />
+                <CiMail size={20} />
               </a>
             </div>
           </div>

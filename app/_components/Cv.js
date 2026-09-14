@@ -28,14 +28,15 @@ export default function CVViewer() {
           </p>
         }
       >
-        {Array.from(new Array(numPages), (_, i) => (
-          <Page
-            key={i}
-            pageNumber={i + 1}
-            renderTextLayer={false}
-            renderAnnotationLayer={false}
-          />
-        ))}
+        {numPages &&
+          Array.from(new Array(numPages), (_, i) => (
+            <Page
+              key={i}
+              pageNumber={i + 1}
+              renderTextLayer={false}
+              renderAnnotationLayer={false}
+            />
+          ))}
       </Document>
     </div>
   );
